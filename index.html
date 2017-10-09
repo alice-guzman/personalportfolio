@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <title>My Personal Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-6">
+        <div id="logo">
+          <svg height="2" width="37">
+            <line x1="0" y1="0" x2="37" y2="0" style="stroke:rgb(86,86,86);stroke-width:3" />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+          <svg height="2" width="37">
+            <line x1="0" y1="0" x2="31" y2="0" style="stroke:rgb(86,86,86);stroke-width:3" />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+          <p>Alicia</p>
+          <p>Guzman</p>
+
+        </div>
+      </div>
+      <div class="col-md-6 text-right text-uppercase devName">
+        <h1>alicia guzman</h1>
+        <h4>front-end ninja</h4>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col-md-12"><hr></div>
+    </div>
+
+    <section class="row">
+      <div class="col-md-12">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/web-development.jpg 1x, images/web-development_2x.jpg 2x">
+          <source media="(max-width: 799px)" srcset="images/web-development-small_1x.jpg 1x, images/web-development-small_2x.jpg 2x">
+          <img src="images/web-development_2x.jpg" class="img-responsive center-block" alt="Common desktop of a developer">
+        </picture>
+      </div>
+    </section>
+
+    <section class="row featuredWork">
+      <div class="col-md-12">
+        <h2>Featured Work</h2>
+      </div>
+    </section>
+
+    <section class="row featuredWork">
+      <div class="col-md-4">
+        <img src="images/puppy_medium.jpg" srcset="images/puppy_large_2x.jpg 2x, images/puppy_medium.jpg 1x" class="img-responsive center-block" alt="Animal Trading Card Application image" data-toggle="modal" data-target="#appify">
+        <h3 class="text-uppercase">Appify</h3>
+        <p><a href="http://github.com/">https://github.com/udacity/Appify</a></p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/family_medium.jpg" srcset="images/family_large_2x.jpg 2x, images/family_medium.jpg 1x" class="img-responsive center-block" alt="Family Learning Tips Application image" data-toggle="modal" data-target="#sunflower">
+        <h3 class="text-uppercase">Sunflower</h3>
+        <p><a href="http://github.com/">https://github.com/udacity/Sunflower</a></p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/dance_medium.jpg" srcset="images/dance_large_2x.jpg 2x, images/dance_medium.jpg 1x" class="img-responsive center-block" alt="Dancing application image" data-toggle="modal" data-target="#bokeh">
+        <h3 class="text-uppercase">Bokeh</h3>
+        <p><a href="http://github.com/">https://github.com/udacity/Bokeh</a></p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal Appify-->
+  <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Appify</h4>
+              </div>
+              <div class="modal-body">
+                  <img src="images/puppy_medium.jpg" class="img-responsive center-block" alt="Animal Trading Card Application image">
+                  This was my first project in this class. I learned a lot about HTML and CSS.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal Sunflower-->
+  <div class="modal fade" id="sunflower" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Sunflower</h4>
+              </div>
+              <div class="modal-body">
+                  <img src="images/family_medium.jpg" srcset="images/family_large_2x.jpg 2x, images/family_medium.jpg 1x" class="img-responsive center-block" alt="Family Learning Tips Application image">
+                  This was my second project in this class. I learned a lot about HTML and CSS.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal Bokeh-->
+  <div class="modal fade" id="bokeh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Bokeh</h4>
+              </div>
+              <div class="modal-body">
+                  <img src="images/dance_medium.jpg" srcset="images/dance_large_2x.jpg 2x, images/dance_medium.jpg 1x" class="img-responsive center-block" alt="Dancing application image">
+                  This was my third project in this class. I learned a lot about HTML and CSS.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</body>
+</html>
