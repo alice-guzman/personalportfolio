@@ -57,6 +57,12 @@ hr{
   font-weight: 400;
 }
 
+.bgimage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .featuredWork h2 {
   color: #7d97ad;
   font-size: 2em;
